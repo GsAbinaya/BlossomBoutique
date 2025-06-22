@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    bellota: ['Bellota', 'sans-serif'],
+
+                },
+            },
+        },
+    }
+    </script>
+</head>
+
+<body>
+    <!--navbar-->
+    
+   <div class="container mx-auto bg-pink-500 p-4">
+    <div class="flex flex-row justify-between items-center">
+        <h1 class="text-2xl font-bellota">BlossomBoutique</h1>
+        <ul class=" hidden  md:flex justify-between gap-2 font-bellota">
+            <li class="hover:text-lg">Home</li>
+            <li class="hover:text-lg">Flowers</li>
+            <li class="hover:text-lg">Gallery</li>
+            <li class="hover:text-lg">Contact</li>
+        </ul>
+        <div class="md:hidden">
+               <svg  class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+<path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+</svg>
+        </div>
+    </div>
+
+   </div> 
+
+   <!--Hero-->
+
+   <div class="container mx-auto bg-pink-300 m-6">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="w-full md:w-1/2 p-4">
+     <h1 class="text-pink-700  font-bellota font-bold text-xl m-6">Brighten your day with Blooms</h1>
+     <h3 class="text-pink-700  font-bellota font-bold text-xl m-4">Fresh Flowers everyday in your Doorstep</h3>
+        <button class="inline-block bg-pink-500  font-bellota  rounded p-2 hover:bg-pink-800">Shop Now</button>
+        <button class="inline-block bg-pink-500  font-bellota rounded p-2 hover:bg-pink-800">View Gallery</button>
+      </div>
+       
+     
+      
+      <div class="w-full md:w-1/2 p-4">
+        <img src="./images/heroflr.jpg">
+      </div>
+    </div>
+   </div>
+
+   <!--Plan Section-->
+   <div class="container mx-auto justify-between items-center bg-pink-300 m-4">
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+       <div class="rounded-xl border m-4">
+        <h3 class="font-bold text-center">Budget Blooms</h3>
+        <ul>
+            <li>Pick any flower within 100Rs.</li>
+            <li>Become our Customer and get points.</li>
+            <li>Wide Range of colors</li>
+        </ul>
+        <button class="bg-pink-700 font-bellota  font-bold p-2 rounded">Order Now</button>
+       </div>
+        <div class="rounded-xl border m-4">
+        <h3 class="font-bold text-center">Classic Bundle</h3>
+        <ul>
+            <li>Pick any flower within 100Rs.</li>
+            <li>Become our Customer and get points.</li>
+            <li>Wide Range of colors</li>
+        </ul>
+         <button class="bg-pink-700 font-bellota  font-bold p-2 rounded">Order Now</button>
+       </div>
+        <div class="rounded-xl border m-4">
+        <h3 class="font-bold text-center">Luxury Blooms</h3>
+        <ul>
+            <li>Pick any flower within 100Rs.</li>
+            <li>Become our Customer and get points.</li>
+            <li>Wide Range of colors</li>
+        </ul>
+         <button class="bg-pink-700 font-bellota  font-bold p-2 rounded">Order Now</button>
+       </div>
+     </div>
+   </div>
+
+   <!--Newsletter section-->
+   <div class="container mx-auto bg-pink-300 px-4 py-12">
+    <div class="flex flex-col justify-between">
+    <h1 class="text-center font-bellota  font-bold text-2xl">Join our Flower Club Today</h1>
+    <input class=" m-4 max-w-full rounded border-pink-600 font-bellota text-center" type="text" placeholder="ENTER YOUR E-MAIL">
+    <button class=" m-4 font-bold px-4 py-2 bg-pink-600 font-bellota ">Subscribe </button>
+   </div>
+   </div>
+
+   <!--Gallery-->
+   <div class="container mx-auto bg-pink-300 p-8 m-6">
+    <h1 class="font-bold text-2xl text-pink-600 font-bellota  text-center">Our Collections</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <div>
+        <img  class="h-40 w-full object-cover rounded" src="./images/flr1.jpg">
+     </div>
+      <div>
+        <img class="h-40 w-full object-cover rounded" src="./images/flr2.jpg">
+     </div>
+       <div>
+        <img class="h-40 w-full object-cover rounded" src="./images/flr3.jpg">
+     </div>
+       <div>
+        <img class="h-40 w-full object-cover rounded" src="./images/flr4.jpg">
+     </div>
+       <div>
+        <img class="h-40 w-full rounded" src="./images/flr5.jpg">
+     </div>
+       <div>
+        <img class="h-40 w-full rounded" src="./images/flr6.jpg">
+     </div>
+
+    </div>
+   </div>
+
+   <!--Footer-->
+   <div class="container mx-auto m-6 p-4 bg-pink-300">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <h2 class=" font-bellota text-3xl font-bold text-pink-700 hover:text-pink-800">BlossomBoutique</h2>
+        </div>
+        <div>
+            <ul class="text-pink-700 font-bellota ">
+                <li>Home</li>
+                <li>Flowers</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+       <div class="flex justify-start md:justify-end">
+         <ul class="flex gap-4 text-pink-700">
+            <li>
+                <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 6.9199219 6 L 21.136719 26.726562 L 6.2285156 44 L 9.40625 44 L 22.544922 28.777344 L 32.986328 44 L 43 44 L 28.123047 22.3125 L 42.203125 6 L 39.027344 6 L 26.716797 20.261719 L 16.933594 6 L 6.9199219 6 z"/>
+                </svg>
+            </li>
+            <li>
+
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.014467 17.065322 19.313017 13.21875 19.898438 L 13.21875 14.384766 L 15.546875 14.384766 L 15.912109 12.019531 L 13.21875 12.019531 L 13.21875 10.726562 C 13.21875 9.7435625 13.538984 8.8710938 14.458984 8.8710938 L 15.935547 8.8710938 L 15.935547 6.8066406 C 15.675547 6.7716406 15.126844 6.6953125 14.089844 6.6953125 C 11.923844 6.6953125 10.654297 7.8393125 10.654297 10.445312 L 10.654297 12.019531 L 8.4277344 12.019531 L 8.4277344 14.384766 L 10.654297 14.384766 L 10.654297 19.878906 C 6.8702905 19.240845 4 15.970237 4 12 C 4 7.5698774 7.5698774 4 12 4 z"/>
+</svg>
+            </li>
+         </ul>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
